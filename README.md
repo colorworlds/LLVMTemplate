@@ -8,10 +8,12 @@ C++ 引用LLVM库的最小项目。
 # 安装llvm环境
 ```bash
 sudo apt-get update
-sudo apt-get install llvm
+sudo apt-get -y install llvm
 ```
 
 debian上有一个版本为11的llvm，位于`/usr/lib/llvm11`目录下，但看起来缺文件，上面的命令会在该目录下更新llvm，补全所需的文件。
+
+如果上面的命令报错可以尝试启用新终端，或者关闭标签页重新进一下项目。
 
 # 运行
 打开main.cpp文件
