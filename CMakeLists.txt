@@ -5,7 +5,7 @@ project(CPP)
 # 查找llvm库
 find_package(LLVM REQUIRED CONFIG)
  
-# 添加llvm的头文件目录
+# 添加llvm的头文件目录，若出错则编辑器也会找不到llvm相关的头文件
 include_directories(${LLVM_INCLUDE_DIRS})
 
 # 将所需的LLVM库映射到llvm_libs变量。
